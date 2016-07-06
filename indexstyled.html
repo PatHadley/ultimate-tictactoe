@@ -27,7 +27,7 @@
     </header>
     <main flex="40">
       <div class="super-board">
-        <div class="board-frame">
+        <div class="board-frame" ng-class="{}">
           <div class="inner-board" >
             <button class="cell" ng-repeat="position in game.games[0] track by $index"
              ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 0)"
